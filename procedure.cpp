@@ -83,3 +83,23 @@ void gestionListe() {
 		}
 	} while (reco);
 }
+void gestionFichier() {
+	int choix;
+	bool reco = true;
+
+	do {
+		saisirControleEntierBorne("1-Nouveau Fichier \n2-Ecrire Fichier \n3 Lire Fichier\n4-Quitter", 0, 4, choix);
+
+		switch (choix) {
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		default:
+			cout << "Bonne continuation !" << endl;
+			reco = false;
+		}
+	} while (reco);
+}
