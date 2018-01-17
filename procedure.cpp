@@ -95,11 +95,11 @@ void gestionFichier() {
 	}
 
 	do {
-		saisirControleEntierBorne("\n1-Lire Fichier \n2 Ecrire Fichier\n3-Quitter", 0, 3, choix);
+		saisirControleEntierBorne("\n1-ecrire dans Fichier \n2 vide\n3-Quitter", 0, 3, choix);
 
 		switch (choix) {
 		case 1:
-			LireFich();
+			ecrire();
 			break;
 		case 2:
 			EcrireFich();
@@ -109,5 +109,5 @@ void gestionFichier() {
 			reco = false;
 		}
 	} while (reco);
-	fclose(f);
+
 }
