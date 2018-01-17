@@ -5,6 +5,7 @@
 #include <string>
 #include "outils.h"
 #include <iomanip>
+#include "fichier.h"
 using namespace std;
 
 void bibliotheque2() {
@@ -92,8 +93,10 @@ void gestionFichier() {
 
 		switch (choix) {
 		case 1:
+			CreerFich();
 			break;
 		case 2:
+			LireFich();
 			break;
 		case 3:
 			break;

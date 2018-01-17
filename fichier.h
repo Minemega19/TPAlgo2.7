@@ -3,19 +3,21 @@
 
 using namespace std;
 
-/*int main()
+int CreerFich()
 {
-	ifstream fichier("tptxt.txt", ios::in);  // on ouvre le fichier en lecture
+	ifstream fichier("tptxt.txt", ios::in);
 
-	if (fichier)  // si l'ouverture a réussi
+	if (fichier)
 	{
-		// instructions
-		fichier.close();  // on ferme le fichier
+		cout << "Fichier ouvert avec succes"<< endl;
+		system("PAUSE");
+		fichier.close();
 	}
-	else  // sinon
-		cerr << "Impossible d'ouvrir le fichier !" << endl;
-
+	else 
+		cout << "Impossible d'ouvrir le fichier !" << endl;
 	return 0;
-}*/
-
+}
+int LireFich() {
+	return 0;
+}
 #pragma once
