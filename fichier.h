@@ -37,6 +37,9 @@ int EcrireFich() {
 	}
 	return 0;
 }
-
+void ecrire(FILE& *f){
+	string p;
+	
+}
 //void 
 #pragma once
