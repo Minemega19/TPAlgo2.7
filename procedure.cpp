@@ -86,19 +86,22 @@ void gestionListe() {
 }
 void gestionFichier() {
 	int choix;
+	FILE *f;
 	bool reco = true;
+	f=fopen("tptxt.txt","r+");
+	if (f==NULL){
+		cout<<"cannot open file"<<endl;
+		return;
+	}
 
 	do {
-		saisirControleEntierBorne("1-Nouveau Fichier \n2-Lire Fichier \n3 Ecrire Fichier\n4-Quitter", 0, 4, choix);
+		saisirControleEntierBorne("\n1-Lire Fichier \n2 Ecrire Fichier\n3-Quitter", 0, 3, choix);
 
 		switch (choix) {
 		case 1:
-			CreerFich();
-			break;
-		case 2:
 			LireFich();
 			break;
-		case 3:
+		case 2:
 			EcrireFich();
 			break;
 		default:
@@ -106,4 +109,5 @@ void gestionFichier() {
 			reco = false;
 		}
 	} while (reco);
+	fclose(f);
 }

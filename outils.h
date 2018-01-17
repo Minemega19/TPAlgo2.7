@@ -1,4 +1,4 @@
-﻿#ifndef OUTILS_H
+#ifndef OUTILS_H
 #define OUTILS_H
 /////////////////////////// Include //////////////////////////////////////
 #include <iostream> 

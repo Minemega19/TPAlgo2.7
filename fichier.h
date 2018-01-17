@@ -37,4 +37,6 @@ int EcrireFich() {
 	}
 	return 0;
 }
+
+//void 
 #pragma once

@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <iostream> 
@@ -702,7 +702,7 @@ void Suppressionliste(t_liste_int& li) {//a verifier
 	int i = 0;
 	int position;
 
-	cout << "Entrer la position de la valeur à supprimer : " << endl;
+	cout << "Entrer la position de la valeur � supprimer : " << endl;
 	cin >> position;
 	for (i = position; i < li.nbliste; i++) {
 		li.liste[i] = li.liste[i + 1];

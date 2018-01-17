@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "outils.h"
 #include "declaration.h"
 using namespace std;
