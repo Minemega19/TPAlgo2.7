@@ -89,7 +89,7 @@ void gestionFichier() {
 	bool reco = true;
 
 	do {
-		saisirControleEntierBorne("1-Nouveau Fichier \n2-Ecrire Fichier \n3 Lire Fichier\n4-Quitter", 0, 4, choix);
+		saisirControleEntierBorne("1-Nouveau Fichier \n2-Lire Fichier \n3 Ecrire Fichier\n4-Quitter", 0, 4, choix);
 
 		switch (choix) {
 		case 1:
@@ -99,6 +99,7 @@ void gestionFichier() {
 			LireFich();
 			break;
 		case 3:
+			EcrireFich();
 			break;
 		default:
 			cout << "Bonne continuation !" << endl;

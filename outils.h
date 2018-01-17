@@ -58,6 +58,7 @@ int ChercheListe(t_liste_int li, int var);
 int Nbelementliste(t_liste_int li);
 int CreerFich();
 int LireFich();
+int EcrireFich();
 //void lendemain(int &j, int &m, int &a);
 //////////////////////////////////////////////////////////////////////////
 
