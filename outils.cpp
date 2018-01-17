@@ -498,9 +498,8 @@ void Suppression(t_biblio& bib) {
 			bib.biblio[i].annee = bib.biblio[i + 1].annee;
 			bib.biblio[i].nb_pages = bib.biblio[i + 1].nb_pages;
 			bib.biblio[i].format = bib.biblio[i + 1].format;
-			bib.nblivre = bib.nblivre - 1;
-
 		}
+		bib.nblivre = bib.nblivre - 1;
 	}
 	else {
 		cout << "Le livre n a pas ete trouve " << endl;
